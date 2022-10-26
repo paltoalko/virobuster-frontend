@@ -1,0 +1,27 @@
+.informationContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.title {
+  margin: 0 10vw;
+  line-height: 70%;
+}
+
+.technicalData {
+  width: 80vw;
+  height: 60vh;
+  background-color: #fafafa;
+}
+
+.sideTitle {
+  opacity: 0.3;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  position: absolute;
+  right: 5px;
+}

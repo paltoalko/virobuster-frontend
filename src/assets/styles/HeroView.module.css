@@ -1,0 +1,67 @@
+.heroBackground {
+  position: fixed;
+  height: 100vh;
+  z-index: -100;
+  opacity: 0.2;
+  padding-right: 7px;
+}
+
+.heroContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-bottom: -13vmax;
+  margin-top: -13vmax;
+}
+
+.headline {
+  font-size: 6vmax !important;
+}
+
+.divider {
+  width: 70vw;
+  height: 0.2vh;
+  background-color: #fafafa;
+}
+
+.subtitle {
+  margin-top: 1vh !important;
+  font-size: 2vmax !important;
+  text-transform: uppercase;
+}
+
+.mouse {
+  position: absolute;
+  bottom: 40px;
+  animation: scrollDown 2s linear infinite;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 10px;
+  animation: scrollDown 2s linear infinite;
+}
+
+/* @keyframes scrollDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+} */
