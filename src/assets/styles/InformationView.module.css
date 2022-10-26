@@ -1,20 +1,37 @@
 .informationContainer {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-}
-
-.title {
-  margin: 0 10vw;
-  line-height: 70%;
+  text-align: center;
 }
 
 .technicalData {
-  width: 80vw;
-  height: 60vh;
-  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.technicalText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+}
+
+.title {
+  line-height: 70%;
+  margin: 1vmax;
+  font-size: 4vw;
+}
+
+.textTitle {
+  border-bottom: 1px solid white;
+  padding: 1px 4px;
+  text-transform: uppercase;
+  margin: 0.5vh;
 }
 
 .sideTitle {
@@ -24,4 +41,5 @@
   white-space: nowrap;
   position: absolute;
   right: 5px;
+  font-size: 6vw;
 }
