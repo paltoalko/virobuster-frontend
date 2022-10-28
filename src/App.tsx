@@ -1,4 +1,4 @@
-import { Box, ThemeProvider, Typography } from '@mui/material';
+import { Box, ThemeProvider } from '@mui/material';
 import React from 'react';
 import theme from './assets/theme';
 import Header from './components/Header';
@@ -8,7 +8,9 @@ import InformationView from './components/InformationView';
 import PhotosView from './components/PhotosView';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import BodyHeader from './components/BodyHeader';
 import './assets/styles/style.css';
+import VideoView from './components/VideoView';
 function App() {
   return (
     <Box>
@@ -16,9 +18,11 @@ function App() {
         <Header />
         <HeroView />
         <Box className={'container-middle'}>
-          <DetailsView />
-          <PhotosView />
           <InformationView />
+          <VideoView />
+          <DetailsView />
+          <BodyHeader />
+          <PhotosView />
           <Contact />
           <Footer />
         </Box>
