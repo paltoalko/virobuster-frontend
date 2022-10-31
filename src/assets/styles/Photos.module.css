@@ -1,0 +1,48 @@
+.popUpsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5vw;
+  height: 100vh;
+}
+
+.middleContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoBox {
+  width: 40vw;
+  max-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+.circlesBox {
+  margin: 5vh;
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle,
+.circleActive {
+  width: 7px;
+  height: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.circleActive {
+  background-color: white;
+}
