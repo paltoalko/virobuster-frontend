@@ -1,43 +1,39 @@
-.photosViewContainer {
-  margin: 10vh 0;
+.container {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.textContainer {
+  display: flex;
+  width: 60%;
+}
+
+.textElement {
+  width: 100%;
+  padding: 0 2vw;
 }
 
 .header {
-  font-size: 3vmax !important;
+  font-size: 2vw;
+  text-align: center;
 }
 
-.photosContainer {
-  margin: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.photoBox {
-  width: 300px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-  transition: 1s;
-}
-
-img {
+.sideTitle {
+  opacity: 0.4;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
   position: absolute;
-  top: -9999px;
-  left: -9999px;
-  right: -9999px;
-  bottom: -9999px;
-  margin: auto;
+  right: 5px;
+  font-size: 5.5vw !important;
+  z-index: -100;
 }

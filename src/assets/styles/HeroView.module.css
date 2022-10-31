@@ -1,9 +1,9 @@
 .heroBackground {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   z-index: -100;
-  opacity: 0.2;
   padding-right: 7px;
+  opacity: 0.4;
 }
 
 .heroContainer {

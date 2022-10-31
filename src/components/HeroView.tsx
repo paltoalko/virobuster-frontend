@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import HeroImg from '../assets/img/virobuster.png';
 import styles from '../assets/styles/HeroView.module.css';
 import { ReactComponent as Logo } from '../assets/svg/logo.svg';
@@ -27,8 +27,8 @@ const HeroView: React.FC<{}> = ({}) => {
       >
         Czyste Powietrze w swojej najpiękniejszej postaci
       </Typography>
-      <Mouse className={styles.mouse} />
-      <Arrows className={styles.arrows} />
+      {/* <Mouse className={styles.mouse} />
+      <Arrows className={styles.arrows} /> */}
       <img
         src={HeroImg}
         alt="steribase 450 device black"

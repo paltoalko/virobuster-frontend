@@ -1,8 +1,9 @@
 import { Box } from '@mui/material';
 import React from 'react';
+import styles from '../assets/styles/Contact.module.css';
 
 const Contact: React.FC<{}> = ({}) => {
-  return <Box>Contact</Box>;
+  return <Box className={styles.container}>Contact</Box>;
 };
 
 export default Contact;

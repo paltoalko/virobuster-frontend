@@ -2,44 +2,35 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.technicalData {
+.headerBox {
+  height: 20vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
-.technicalText {
+.header {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.listContainer {
+  margin: 5vh;
+}
+
+.listItem {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50vw;
 }
 
-.title {
-  line-height: 70%;
-  margin: 1vmax;
-  font-size: 4vw;
-}
-
-.textTitle {
-  border-bottom: 1px solid white;
-  padding: 1px 4px;
-  text-transform: uppercase;
-  margin: 0.5vh;
-}
-
-.sideTitle {
-  opacity: 0.4;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  white-space: nowrap;
-  position: absolute;
-  right: 5px;
-  font-size: 6vw;
+.listText {
+  font-size: 1.5vw;
 }

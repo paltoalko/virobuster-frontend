@@ -1,0 +1,14 @@
+.videoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  object-fit: cover;
+  width: 70% !important;
+  height: auto !important;
+  outline: none;
+  border: none;
+}
