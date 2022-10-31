@@ -35,7 +35,7 @@ const DetailsView: React.FC<{}> = ({}) => {
       <SideLogo className={styles.sideLogo} />
       <Box className={styles.buttonBox}>
         <Button
-          variant="outlined"
+          variant={activePhotos ? 'contained' : 'outlined'}
           color="primary"
           name="photos"
           sx={{ minWidth: '9vw' }}
@@ -44,22 +44,22 @@ const DetailsView: React.FC<{}> = ({}) => {
           Zdjęcia
         </Button>
         <Button
-          variant="outlined"
+          variant={activeTechnicalData ? 'contained' : 'outlined'}
           color="primary"
           name="technicalData"
           sx={{ minWidth: '9vw' }}
           onClick={(e) => handlePress(e)}
         >
-          Parametry
+          Opis
         </Button>
         <Button
-          variant="outlined"
+          variant={activeDetails ? 'contained' : 'outlined'}
           color="primary"
           name="details"
           sx={{ minWidth: '9vw' }}
           onClick={(e) => handlePress(e)}
         >
-          Opis
+          Parametry
         </Button>
       </Box>
     </Box>
