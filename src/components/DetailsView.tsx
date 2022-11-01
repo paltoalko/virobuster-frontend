@@ -38,7 +38,7 @@ const DetailsView: React.FC<{}> = ({}) => {
           variant={activePhotos ? 'contained' : 'outlined'}
           color="primary"
           name="photos"
-          sx={{ minWidth: '9vw' }}
+          sx={{ minWidth: '9vw', boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
           Zdjęcia
@@ -47,7 +47,7 @@ const DetailsView: React.FC<{}> = ({}) => {
           variant={activeTechnicalData ? 'contained' : 'outlined'}
           color="primary"
           name="technicalData"
-          sx={{ minWidth: '9vw' }}
+          sx={{ minWidth: '9vw', boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
           Opis
@@ -56,7 +56,7 @@ const DetailsView: React.FC<{}> = ({}) => {
           variant={activeDetails ? 'contained' : 'outlined'}
           color="primary"
           name="details"
-          sx={{ minWidth: '9vw' }}
+          sx={{ minWidth: '9vw', boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
           Parametry

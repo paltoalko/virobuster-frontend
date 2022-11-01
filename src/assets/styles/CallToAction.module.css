@@ -7,6 +7,6 @@
   margin: 5vh;
 }
 .header {
-  font-size: 3vw;
+  font-size: 3vw !important;
   margin-bottom: 2vh !important;
 }
