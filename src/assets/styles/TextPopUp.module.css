@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+.textContainer {
+  display: flex;
+  width: 60%;
+}
+
+.textElement {
+  width: 100%;
+  padding: 0 2vw;
+}
