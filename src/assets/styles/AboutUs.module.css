@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutBox {
+  width: 80%;
+}
+
+.header {
+  font-size: 2.5vw !important;
+  line-height: 100%;
+  text-align: center;
+  margin: 5vh;
+}
+
+.subheader {
+  margin: 1vh;
+  font-size: 2vw !important;
+}
