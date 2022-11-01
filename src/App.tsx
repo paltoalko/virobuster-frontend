@@ -11,6 +11,8 @@ import Footer from './components/Footer';
 import BodyHeader from './components/BodyHeader';
 import './assets/styles/style.css';
 import VideoView from './components/VideoView';
+import FAQ from './components/FAQ';
+import AboutUs from './components/AboutUs';
 function App() {
   return (
     <Box>
@@ -23,7 +25,9 @@ function App() {
           <DetailsView />
           <BodyHeader />
           <PhotosView />
+          <FAQ />
           <Contact />
+          <AboutUs />
           <Footer />
         </Box>
       </ThemeProvider>

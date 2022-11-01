@@ -1,0 +1,16 @@
+.faqContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  font-size: 3vw !important;
+  margin: 5vh !important;
+}
+
+.listContainer {
+  width: 70%;
+}
