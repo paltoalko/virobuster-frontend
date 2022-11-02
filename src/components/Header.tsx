@@ -1,5 +1,5 @@
 import { Box, Typography, Button } from '@mui/material';
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import styles from '../assets/styles/Header.module.css';
 
 interface ButtonProps {
@@ -8,10 +8,10 @@ interface ButtonProps {
 }
 
 interface Iprops {
-  contactRef: React.Ref<HTMLElement>;
-  aboutUsRef: React.Ref<HTMLInputElement>;
-  faqRef: React.Ref<HTMLInputElement>;
-  detailsRef: React.Ref<HTMLInputElement | null>;
+  contactRef: MutableRefObject<HTMLButtonElement>;
+  aboutUsRef: MutableRefObject<HTMLButtonElement>;
+  faqRef: MutableRefObject<HTMLButtonElement>;
+  detailsRef: MutableRefObject<HTMLButtonElement>;
 }
 
 const MenuButton: React.FC<ButtonProps> = ({ title, onPress }) => {
