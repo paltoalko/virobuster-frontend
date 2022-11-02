@@ -1,10 +1,10 @@
-import { Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import TextPopUp from '../assets/helpers/TextPopUp';
 import styles from '../assets/styles/AboutUs.module.css';
 import { ReactComponent as Mission } from '../assets/svg/mission.svg';
 
-const AboutUs: React.FC<{}> = ({}) => {
+const AboutUs: React.FC<{}> = () => {
   return (
     <Box className={styles.container}>
       <Box className={styles.aboutBox}>

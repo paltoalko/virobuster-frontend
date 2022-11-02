@@ -53,7 +53,7 @@ const rows = [
   ),
 ];
 
-const Details: React.FC<{}> = ({}) => {
+const Details: React.FC<{}> = () => {
   return (
     <TableContainer className={styles.popUpsContainer}>
       <Table sx={{ minWidth: 650 }} aria-label="caption table">

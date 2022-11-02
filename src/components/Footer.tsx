@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/Footer.module.css';
 
-const Footer: React.FC<{}> = ({}) => {
+const Footer: React.FC<{}> = () => {
   return (
     <Box className={styles.footer}>
       <Typography

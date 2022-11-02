@@ -1,8 +1,6 @@
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/InformationView.module.css';
-
 import { ReactComponent as RightLeaf } from '../assets/svg/rightleaf.svg';
 import { ReactComponent as LeftLeaf } from '../assets/svg/leftleaf.svg';
 import CheckIcon from '@mui/icons-material/Check';
@@ -28,7 +26,7 @@ const ListItem: React.FC<ListItemProps> = ({ description }) => {
   );
 };
 
-const InformationView: React.FC<{}> = ({}) => {
+const InformationView: React.FC<{}> = () => {
   return (
     <Box className={styles.informationContainer}>
       <Box className={styles.headerBox}>

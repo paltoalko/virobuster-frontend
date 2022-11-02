@@ -2,7 +2,7 @@ import { Box, Typography, Button } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/CallToAction.module.css';
 
-const CallToAction: React.FC<{}> = ({}) => {
+const CallToAction: React.FC<{}> = () => {
   return (
     <Box className={styles.ctaContainer}>
       <Typography

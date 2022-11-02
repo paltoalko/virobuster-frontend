@@ -1,5 +1,5 @@
-import { Box, Button, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import { Box, Typography } from '@mui/material';
+import React from 'react';
 import styles from '../assets/styles/FAQ.module.css';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -32,7 +32,7 @@ const FAQItem: React.FC<Iprops> = ({ title, description }) => {
   );
 };
 
-const FAQ: React.FC<{}> = ({}) => {
+const FAQ: React.FC<{}> = () => {
   return (
     <Box className={styles.faqContainer}>
       <Typography

@@ -26,7 +26,7 @@ const TextPopUp: React.FC<TextPopUpProps> = ({ title, left }) => {
   );
 };
 
-const TechnicalData: React.FC<{}> = ({}) => {
+const TechnicalData: React.FC<{}> = () => {
   return (
     <Box className={styles.popUpsContainer}>
       <Box className={styles.popUpLeft}>

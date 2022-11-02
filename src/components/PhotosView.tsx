@@ -7,7 +7,7 @@ import { ReactComponent as Room } from '../assets/svg/room.svg';
 import { ReactComponent as Safe } from '../assets/svg/safe.svg';
 import CallToAction from './CallToAction';
 
-const PhotosView: React.FC<{}> = ({}) => {
+const PhotosView: React.FC<{}> = () => {
   return (
     <Box className={styles.container}>
       <TextPopUp

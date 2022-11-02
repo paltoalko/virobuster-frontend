@@ -1,8 +1,8 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/BodyHeader.module.css';
 
-const PhotosView: React.FC<{}> = ({}) => {
+const PhotosView: React.FC<{}> = () => {
   return (
     <Box className={styles.headers}>
       <Typography

@@ -6,7 +6,7 @@ import Photos from '../assets/detailsView/Photos';
 import styles from '../assets/styles/DetailsView.module.css';
 import { ReactComponent as SideLogo } from '../assets/svg/logo-sideways.svg';
 
-const DetailsView: React.FC<{}> = ({}) => {
+const DetailsView: React.FC<{}> = () => {
   const [activeTechnicalData, setActiveTechnicalData] = useState(true);
   const [activePhotos, setActivePhotos] = useState(false);
   const [activeDetails, setActiveDetails] = useState(false);
