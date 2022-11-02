@@ -1,5 +1,5 @@
 import { Box, ThemeProvider } from '@mui/material';
-import React from 'react';
+import React, { useRef } from 'react';
 import theme from './assets/theme';
 import Header from './components/Header';
 import HeroView from './components/HeroView';
@@ -13,21 +13,40 @@ import './assets/styles/style.css';
 import VideoView from './components/VideoView';
 import FAQ from './components/FAQ';
 import AboutUs from './components/AboutUs';
+
 function App() {
+  const aboutUs = useRef<HTMLInputElement>(null);
+  const faq = useRef<HTMLInputElement>(null);
+  const details = useRef<HTMLInputElement>(null);
+  const contact = useRef<HTMLInputElement>(null);
+
   return (
     <Box>
       <ThemeProvider theme={theme}>
-        <Header />
+        <Header
+          contactRef={contact}
+          aboutUsRef={aboutUs}
+          faqRef={faq}
+          detailsRef={details}
+        />
         <HeroView />
         <Box className={'container-middle'}>
           <InformationView />
           <VideoView />
-          <DetailsView />
+          <Box ref={details}>
+            <DetailsView />
+          </Box>
           <BodyHeader />
           <PhotosView />
-          <FAQ />
-          <Contact />
-          <AboutUs />
+          <Box ref={faq}>
+            <FAQ />
+          </Box>
+          <Box ref={contact}>
+            <Contact />
+          </Box>
+          <Box ref={aboutUs}>
+            <AboutUs />
+          </Box>
           <Footer />
         </Box>
       </ThemeProvider>

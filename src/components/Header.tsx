@@ -7,6 +7,13 @@ interface ButtonProps {
   onPress?(event: any): void;
 }
 
+interface Iprops {
+  contactRef: React.Ref<HTMLElement>;
+  aboutUsRef: React.Ref<HTMLInputElement>;
+  faqRef: React.Ref<HTMLInputElement>;
+  detailsRef: React.Ref<HTMLInputElement | null>;
+}
+
 const MenuButton: React.FC<ButtonProps> = ({ title, onPress }) => {
   return (
     <Button variant="text" onClick={onPress}>
@@ -17,27 +24,26 @@ const MenuButton: React.FC<ButtonProps> = ({ title, onPress }) => {
   );
 };
 
-const Header: React.FC<{}> = ({}) => {
-  const handlePress = (e) => {
-    console.log(e);
-  };
+const Header: React.FC<Iprops> = ({
+  contactRef,
+  aboutUsRef,
+  faqRef,
+  detailsRef,
+}) => {
   return (
     <Box className={styles.header}>
       <MenuButton
         title="Specyfikacja"
-        onPress={(e) => handlePress(e.target.innerText)}
+        onPress={() => detailsRef.current.scrollIntoView()}
       />
-      <MenuButton
-        title="Oferta"
-        onPress={(e) => handlePress(e.target.innerText)}
-      />
+      <MenuButton title="FAQ" onPress={() => faqRef.current.scrollIntoView()} />
       <MenuButton
         title="O nas"
-        onPress={(e) => handlePress(e.target.innerText)}
+        onPress={() => aboutUsRef.current.scrollIntoView()}
       />
       <MenuButton
         title="Kontakt"
-        onPress={(e) => handlePress(e.target.innerText)}
+        onPress={() => contactRef.current.scrollIntoView()}
       />
     </Box>
   );
