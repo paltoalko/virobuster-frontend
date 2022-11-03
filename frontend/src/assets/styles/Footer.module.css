@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0 0 0;
+
   padding: 1vh 10vw;
-  background-color: #010102;
+  background-color: #2f2e41;
 }
 
 .text {

@@ -19,12 +19,12 @@ const FAQItem: React.FC<Iprops> = ({ title, description }) => {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography variant="body1" fontWeight={400}>
+        <Typography component={'span'} variant="body1" fontWeight={400}>
           {title}
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography variant="body2" fontWeight={300}>
+        <Typography component={'span'} variant="body2" fontWeight={300}>
           {description}
         </Typography>
       </AccordionDetails>
@@ -50,7 +50,7 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="h5" fontWeight={400}>
+            <Typography component={'span'} variant="h5" fontWeight={400}>
               Ogólne
             </Typography>
           </AccordionSummary>
@@ -93,12 +93,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="h5" fontWeight={400}>
+            <Typography component={'span'} variant="h5" fontWeight={400}>
               Technologia
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'span'}>
               <FAQItem
                 title="Jaką technologię wykorzystuje urządzenie do oczyszczania powietrza?"
                 description="Wszystkie urządzenia VIROBUSTER opierają się na opatentowanej technologii UVPE. Powietrze w pomieszczeniu jest uzdatniane w systemie zamkniętym skoncentrowanym promieniowaniem UVC - dodatkowo wielokrotnie wzmacnianym przez reflektory. Promieniowanie to zapewnia, że DNA/RNA mikroorganizmów, takich jak wirusy i bakterie, jest tak uszkodzone, że nie mogą się już rozmnażać - rozprzestrzenianie się choroby jest wtedy niemożliwe. W jednym przejściu 99,99% mikroorganizmów jest w ten sposób dezaktywowanych."
@@ -149,12 +149,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="h5" fontWeight={400}>
+            <Typography component={'span'} variant="h5" fontWeight={400}>
               Urządzenie
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>
+            <Typography component={'span'}>
               <FAQItem
                 title="Jak duże i ciężkie jest urządzenie?"
                 description="Podstawa ma wymiary 54 cm x 54 cm, urządzenie ma 164 m wysokości i waży 39 kg. Nadal można go łatwo przenosić za pomocą zintegrowanych kółek i uchwytu."
@@ -206,7 +206,7 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography variant="h5" fontWeight={400}>
+            <Typography component={'span'} variant="h5" fontWeight={400}>
               Bezpieczeństwo i zdrowie
             </Typography>
           </AccordionSummary>

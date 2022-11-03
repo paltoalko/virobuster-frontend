@@ -24,11 +24,18 @@ const PhotosView: React.FC<{}> = () => {
       <Typography
         variant="h5"
         color="primary"
+        fontWeight={400}
         className={styles.header}
-        sx={{ m: '5vh 6vw' }}
       >
-        Rezultaty są oczywiste: idealne powietrze w każdej sytuacji. Nie tylko
-        czyste powietrze, ale przede wszystkim sterylne.
+        Rezultaty są oczywiste: idealne powietrze w każdej sytuacji.
+      </Typography>
+      <Typography
+        variant="h5"
+        color="primary"
+        fontWeight={300}
+        className={styles.header}
+      >
+        Nie tylko czyste powietrze, <i>ale przede wszystkim sterylne.</i>
       </Typography>
       <TextPopUp
         text1="Oczyszczone powietrze może być podstawą, ale z pewnością nie można traktować go jako oczywistość. Wyziewy (wydzieliny), drobnoustroje, bakterie, grzyby i wszystkie zakaźne aerozole mogą mieć trwały wpływ na jakość powietrza w pomieszczeniach."

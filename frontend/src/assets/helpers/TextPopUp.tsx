@@ -21,15 +21,7 @@ const TextPopUp: React.FC<TextPopUpProps> = ({ text1, text2, svg, left }) => {
           className={styles.textElement}
           fontWeight={200}
         >
-          {text1}
-        </Typography>
-        <Typography
-          variant="body1"
-          color="primary"
-          className={styles.textElement}
-          fontWeight={200}
-        >
-          {text2}
+          {text1} {text2}
         </Typography>
       </Box>
       {!left && svg}

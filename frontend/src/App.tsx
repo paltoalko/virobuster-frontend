@@ -33,20 +33,22 @@ function App() {
         <Box className={'container-middle'}>
           <InformationView />
           <VideoView />
+
+          <BodyHeader />
+          <PhotosView />
           <Box ref={details}>
             <DetailsView />
           </Box>
-          <BodyHeader />
-          <PhotosView />
           <Box ref={faq}>
             <FAQ />
-          </Box>
-          <Box ref={contact}>
-            <Contact />
           </Box>
           <Box ref={aboutUs}>
             <AboutUs />
           </Box>
+          <Box ref={contact}>
+            <Contact />
+          </Box>
+
           <Footer />
         </Box>
       </ThemeProvider>
