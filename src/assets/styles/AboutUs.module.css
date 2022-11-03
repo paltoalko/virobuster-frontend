@@ -7,12 +7,15 @@
 }
 
 .aboutBox {
-  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
 }
 
 .header {
   font-size: 3vw !important;
-  margin: 5vh 0 0 !important;
+  margin: 5vh 0 5vh !important;
 }
 
 .subheader {
@@ -23,4 +26,9 @@
 .cite {
   font-size: 1.5vw !important;
   margin-bottom: 1vh;
+}
+
+.text {
+  text-align: justify;
+  padding: 0 2vw;
 }
