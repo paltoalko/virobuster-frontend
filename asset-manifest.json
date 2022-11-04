@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/virobuster/static/css/main.d866fdcc.css",
+    "main.js": "/virobuster/static/js/main.fa5c0f7a.js",
+    "static/media/virobuster-video.mp4": "/virobuster/static/media/virobuster-video.ff4b3763aeecf20f4d49.mp4",
+    "static/media/steribase2.png": "/virobuster/static/media/steribase2.01bfe406c559dd460eef.png",
+    "static/media/steribase0.png": "/virobuster/static/media/steribase0.97dd90d80f9a87334311.png",
+    "static/media/virobuster.png": "/virobuster/static/media/virobuster.b8807fa2b629931ff971.png",
+    "static/media/steribase4.png": "/virobuster/static/media/steribase4.8b78cce642d9e118906d.png",
+    "static/media/steribase3.png": "/virobuster/static/media/steribase3.d8b6abfce886febf350c.png",
+    "static/media/steribase5.png": "/virobuster/static/media/steribase5.f7be68526e3886100df8.png",
+    "static/media/steribase1.png": "/virobuster/static/media/steribase1.e390011eea8797e7c3a5.png",
+    "static/media/mission.svg": "/virobuster/static/media/mission.9fe04e60eb9d1d206acfba985c9c403b.svg",
+    "static/media/lab.svg": "/virobuster/static/media/lab.04922ba8acf512325faf1745c2eeffc3.svg",
+    "static/media/contactUs.svg": "/virobuster/static/media/contactUs.2124a9d70aacd894cbebac3a853fa3c5.svg",
+    "static/media/room.svg": "/virobuster/static/media/room.9f81c5f789b590596f6b4d5b95e8a5bd.svg",
+    "static/media/rightleaf.svg": "/virobuster/static/media/rightleaf.bd6fc8ce099fd68b14eb81e21866b039.svg",
+    "static/media/leftleaf.svg": "/virobuster/static/media/leftleaf.b605ad781641db04bdedf7ebd84cfc4f.svg",
+    "static/media/safe.svg": "/virobuster/static/media/safe.643db05e541cc7ad7709508918d3ad93.svg",
+    "static/media/logo-sideways.svg": "/virobuster/static/media/logo-sideways.e13f97b228f5ac7ac10dab808976e3c5.svg",
+    "static/media/logo.svg": "/virobuster/static/media/logo.864291ec4f70fe735c99ee5845c3a180.svg",
+    "index.html": "/virobuster/index.html",
+    "static/media/arrows.svg": "/virobuster/static/media/arrows.b2d93ab89846c7ffdff3bff25766e6ec.svg",
+    "main.d866fdcc.css.map": "/virobuster/static/css/main.d866fdcc.css.map",
+    "main.fa5c0f7a.js.map": "/virobuster/static/js/main.fa5c0f7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d866fdcc.css",
+    "static/js/main.fa5c0f7a.js"
+  ]
+}
