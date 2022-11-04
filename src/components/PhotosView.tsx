@@ -18,7 +18,7 @@ const PhotosView: React.FC<{}> = () => {
         text2="Nic więc dziwnego, że wymagania dla warunków życia i jakości
             powietrza od dawna są ze sobą powiązane. W końcu powietrze - to nic
             innego jak samo życie - i tylko to!"
-        svg={<Room />}
+        svg={<Room className={styles.svg} />}
         left={false}
       />
       <Typography
@@ -40,7 +40,7 @@ const PhotosView: React.FC<{}> = () => {
       <TextPopUp
         text1="Oczyszczone powietrze może być podstawą, ale z pewnością nie można traktować go jako oczywistość. Wyziewy (wydzieliny), drobnoustroje, bakterie, grzyby i wszystkie zakaźne aerozole mogą mieć trwały wpływ na jakość powietrza w pomieszczeniach."
         text2="Dzięki certyfikowanej technologii UVPE, STERIBASE® 450 Plus zmniejsza ryzyko infekcji jak żaden inny system oczyszczania, zostało naukowo udowodnione, że neutralizuje surogaty SARSCoV-2. Czego więcej możesz oczekiwać? Jest przebadany naukowo.!"
-        svg={<Lab />}
+        svg={<Lab className={styles.svg} />}
         left={true}
       />
       <CallToAction />
@@ -50,7 +50,7 @@ const PhotosView: React.FC<{}> = () => {
         system UV-C oznacza brak szkodliwego promieniowania światła UV.
         Teraz spokojnie możesz oczekiwać więcej od systemu oczyszczania powietrza.
         Robimy w końcu to samo."
-        svg={<Safe />}
+        svg={<Safe className={styles.svg} />}
         left={false}
       />
 

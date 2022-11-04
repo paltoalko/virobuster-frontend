@@ -7,7 +7,7 @@
 }
 
 .header {
-  font-size: 2vw;
+  font-size: 3vw !important;
   text-align: center;
 }
 
@@ -20,4 +20,14 @@
   right: 5px;
   font-size: 5.5vw !important;
   z-index: -100;
+}
+
+@media only screen and (max-width: 768px) {
+  .svg {
+    scale: 0.7;
+  }
+
+  .sideTitle {
+    margin-bottom: 400px;
+  }
 }

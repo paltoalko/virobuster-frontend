@@ -3,6 +3,7 @@ import React from 'react';
 import HeroImg from '../assets/img/virobuster.png';
 import styles from '../assets/styles/HeroView.module.css';
 import { ReactComponent as Logo } from '../assets/svg/logo.svg';
+import { ReactComponent as Arrows } from '../assets/svg/arrows.svg';
 
 const HeroView: React.FC<{}> = () => {
   return (
@@ -30,6 +31,7 @@ const HeroView: React.FC<{}> = () => {
         alt="steribase 450 device black"
         className={styles.heroBackground}
       />
+      <Arrows className={styles.arrows} />
     </Box>
   );
 };

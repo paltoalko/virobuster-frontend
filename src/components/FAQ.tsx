@@ -19,12 +19,22 @@ const FAQItem: React.FC<Iprops> = ({ title, description }) => {
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Typography component={'span'} variant="body1" fontWeight={400}>
+        <Typography
+          component={'span'}
+          variant="body1"
+          fontWeight={400}
+          className={styles.faqHeader}
+        >
           {title}
         </Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography component={'span'} variant="body2" fontWeight={300}>
+        <Typography
+          component={'span'}
+          variant="body2"
+          fontWeight={300}
+          className={styles.faqHeader}
+        >
           {description}
         </Typography>
       </AccordionDetails>
@@ -50,7 +60,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography component={'span'} variant="h5" fontWeight={400}>
+            <Typography
+              component={'span'}
+              variant="h5"
+              fontWeight={400}
+              className={styles.faqHeader}
+            >
               Ogólne
             </Typography>
           </AccordionSummary>
@@ -93,7 +108,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography component={'span'} variant="h5" fontWeight={400}>
+            <Typography
+              component={'span'}
+              variant="h5"
+              fontWeight={400}
+              className={styles.faqHeader}
+            >
               Technologia
             </Typography>
           </AccordionSummary>
@@ -149,7 +169,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography component={'span'} variant="h5" fontWeight={400}>
+            <Typography
+              component={'span'}
+              variant="h5"
+              fontWeight={400}
+              className={styles.faqHeader}
+            >
               Urządzenie
             </Typography>
           </AccordionSummary>
@@ -206,7 +231,12 @@ const FAQ: React.FC<{}> = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography component={'span'} variant="h5" fontWeight={400}>
+            <Typography
+              component={'span'}
+              variant="h5"
+              fontWeight={400}
+              className={styles.faqHeader}
+            >
               Bezpieczeństwo i zdrowie
             </Typography>
           </AccordionSummary>

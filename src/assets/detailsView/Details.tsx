@@ -56,8 +56,15 @@ const rows = [
 const Details: React.FC<{}> = () => {
   return (
     <TableContainer className={styles.popUpsContainer}>
-      <Table sx={{ minWidth: 650 }} aria-label="caption table">
-        <caption style={{ color: '#fafafa ', fontWeight: '200' }}>
+      <Table
+        sx={{ minWidth: 650 }}
+        aria-label="caption table"
+        className={styles.table}
+      >
+        <caption
+          className={styles.caption}
+          style={{ color: '#fafafa ', fontWeight: '200' }}
+        >
           * W zależności od ilości przepływu powietrza
         </caption>
         <TableBody>
@@ -67,12 +74,14 @@ const Details: React.FC<{}> = () => {
                 component="th"
                 scope="row"
                 sx={{ color: '#fafafa', fontWeight: '300' }}
+                className={styles.rowName}
               >
                 {row.name}
               </TableCell>
               <TableCell
                 align="right"
                 color="primary"
+                className={styles.rowName}
                 sx={{ color: '#fafafa', fontWeight: '200' }}
               >
                 {row.description}

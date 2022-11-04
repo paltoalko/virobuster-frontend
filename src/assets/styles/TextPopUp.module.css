@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .textContainer {
@@ -12,4 +13,16 @@
 .textElement {
   width: 100%;
   padding: 0 2vw;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .textElement {
+    font-size: 2vw !important;
+  }
+
+  .textContainer {
+    width: 80%;
+    padding: 0 2vw;
+  }
 }

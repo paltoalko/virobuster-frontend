@@ -2,7 +2,6 @@
   position: absolute;
   height: 100vh;
   z-index: -100;
-  padding-right: 7px;
   opacity: 0.3;
 }
 
@@ -35,33 +34,29 @@
   text-transform: uppercase;
 }
 
-.mouse {
-  position: absolute;
-  bottom: 40px;
-  animation: scrollDown 2s linear infinite;
-}
-
 .arrows {
-  position: absolute;
-  bottom: 10px;
-  animation: scrollDown 2s linear infinite;
+  display: none;
 }
 
-/* @keyframes scrollDown {
-  0% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
+@media only screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: -6vmax;
+    margin-top: -6vmax;
   }
-  25% {
-    opacity: 0;
-    transform: translateY(10px) scale(0.9);
+  .headline {
+    font-size: 7vw !important;
   }
-  26% {
-    opacity: 0;
-    transform: translateY(-10px) scale(0.9);
+  .subtitle {
+    font-size: 3vw !important;
   }
-  55% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
+
+  .arrows {
+    position: absolute;
+    bottom: 3vh;
+    display: block;
   }
-} */
+
+  .heroBackground {
+    width: 100%;
+  }
+}

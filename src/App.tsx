@@ -33,7 +33,6 @@ function App() {
         <Box className={'container-middle'}>
           <InformationView />
           <VideoView />
-
           <BodyHeader />
           <PhotosView />
           <Box ref={details}>
@@ -48,7 +47,6 @@ function App() {
           <Box ref={contact}>
             <Contact />
           </Box>
-
           <Footer />
         </Box>
       </ThemeProvider>

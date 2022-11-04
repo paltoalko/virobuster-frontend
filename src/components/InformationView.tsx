@@ -12,7 +12,7 @@ interface ListItemProps {
 const ListItem: React.FC<ListItemProps> = ({ description }) => {
   return (
     <Box className={styles.listItem}>
-      <CheckIcon color="success" fontSize="large" />
+      <CheckIcon color="success" className={styles.checkIcon} />
       <Typography
         variant="body1"
         color="primary"

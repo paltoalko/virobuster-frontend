@@ -21,3 +21,9 @@
   margin: 2vh;
   gap: 2vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .button {
+    width: 100px;
+  }
+}

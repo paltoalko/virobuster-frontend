@@ -41,6 +41,7 @@ const Contact: React.FC<{}> = () => {
           color="#2F2E41"
           fontStyle="italic"
           fontWeight={200}
+          className={styles.subheader}
         >
           Jesteś zainteresowany produktem? Albo może masz jeszcze jakieś
           pytania?
@@ -48,7 +49,10 @@ const Contact: React.FC<{}> = () => {
         <Box className={styles.formContainer}>
           <Box>
             <Box className={styles.inputSmall}>
-              <InputLabel htmlFor="input-with-icon-adornment">
+              <InputLabel
+                htmlFor="input-with-icon-adornment"
+                className={styles.label}
+              >
                 Imię i nazwisko
               </InputLabel>
               <Input
@@ -59,14 +63,17 @@ const Contact: React.FC<{}> = () => {
                 type="text"
                 startAdornment={
                   <InputAdornment position="start">
-                    <AccountCircle />
+                    <AccountCircle className={styles.icon} />
                   </InputAdornment>
                 }
               />
             </Box>
 
             <Box className={styles.inputSmall}>
-              <InputLabel htmlFor="input-with-icon-adornment">
+              <InputLabel
+                htmlFor="input-with-icon-adornment"
+                className={styles.label}
+              >
                 Adres Email
               </InputLabel>
               <Input
@@ -77,13 +84,18 @@ const Contact: React.FC<{}> = () => {
                 type="email"
                 startAdornment={
                   <InputAdornment position="start">
-                    <AlternateEmail />
+                    <AlternateEmail className={styles.icon} />
                   </InputAdornment>
                 }
               />
             </Box>
             <Box className={styles.inputTextField}>
-              <InputLabel htmlFor="input-with-icon-adornment">Treść</InputLabel>
+              <InputLabel
+                htmlFor="input-with-icon-adornment"
+                className={styles.label}
+              >
+                Treść
+              </InputLabel>
               <TextField
                 color="secondary"
                 id="textfield"
@@ -95,7 +107,7 @@ const Contact: React.FC<{}> = () => {
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <CommentIcon />
+                      <CommentIcon className={styles.icon} />
                     </InputAdornment>
                   ),
                 }}

@@ -14,3 +14,13 @@
 .listContainer {
   width: 80%;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    margin: 3vh !important;
+  }
+
+  .faqHeader {
+    font-size: 1.5vh !important;
+  }
+}

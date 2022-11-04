@@ -46,3 +46,23 @@ img {
 .circleActive {
   background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  img {
+    max-height: 100%;
+    max-width: 150%;
+  }
+
+  .popUpsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5vw;
+    height: 45vh;
+  }
+
+  .circlesBox {
+    margin: 2vh;
+  }
+}
