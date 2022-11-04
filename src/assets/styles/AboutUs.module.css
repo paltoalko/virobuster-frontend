@@ -25,7 +25,8 @@
 
 .cite {
   font-size: 1.5vw !important;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh !important;
+  text-align: center;
 }
 
 .text {
@@ -38,11 +39,17 @@
     margin: 3vh 0 3vh !important;
   }
   .text {
-    font-size: 1vh !important;
+    font-size: 1.5vh !important;
   }
 
   .aboutBox {
     flex-direction: column-reverse;
     width: 100%;
+  }
+
+  .cite {
+    font-size: 1.5vh !important;
+
+    margin-bottom: 1vh;
   }
 }

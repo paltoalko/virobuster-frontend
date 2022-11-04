@@ -15,12 +15,13 @@
   flex-direction: row-reverse;
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 .menuButton {
   margin: 2vh;
   transition: 1s;
-  z-index: 999;
+  z-index: 1000;
   position: relative;
   top: 0;
   right: 0;
@@ -36,5 +37,5 @@
   height: 100%;
   background-color: rgba(6, 8, 25, 0.866);
   font-size: 2vw;
-  z-index: 100;
+  z-index: 999;
 }

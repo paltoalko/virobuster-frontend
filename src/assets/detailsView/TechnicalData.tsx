@@ -11,7 +11,7 @@ const TextPopUp: React.FC<TextPopUpProps> = ({ title, left }) => {
   return (
     <Box className={styles.popUpElement}>
       {!left && <Box className={styles.circleElement} />}
-      <Box mb="4px">
+      <Box className={styles.textBox}>
         <Typography
           variant="h6"
           fontWeight={100}

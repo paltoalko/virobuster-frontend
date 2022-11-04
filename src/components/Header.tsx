@@ -13,7 +13,7 @@ import styles from '../assets/styles/Header.module.css';
 
 interface ButtonProps {
   title: string;
-  onPress?(event: any): void;
+  onPress?(event: React.MouseEvent<HTMLElement>): void;
 }
 
 interface Iprops {
@@ -45,7 +45,7 @@ const Header: React.FC<Iprops> = ({
 
   const handleClickOutside = (event) => {
     if (ref.current && !ref.current.contains(event.target)) {
-      setOpen(!open);
+      setOpen(true);
     }
   };
   const handleClick = () => {

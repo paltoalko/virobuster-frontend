@@ -56,11 +56,7 @@ const rows = [
 const Details: React.FC<{}> = () => {
   return (
     <TableContainer className={styles.popUpsContainer}>
-      <Table
-        sx={{ minWidth: 650 }}
-        aria-label="caption table"
-        className={styles.table}
-      >
+      <Table aria-label="caption table" className={styles.table}>
         <caption
           className={styles.caption}
           style={{ color: '#fafafa ', fontWeight: '200' }}

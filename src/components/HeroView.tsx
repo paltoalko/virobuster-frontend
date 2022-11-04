@@ -26,11 +26,7 @@ const HeroView: React.FC<{}> = () => {
       >
         Czyste Powietrze w swojej najpiękniejszej postaci
       </Typography>
-      <img
-        src={HeroImg}
-        alt="steribase 450 device black"
-        className={styles.heroBackground}
-      />
+      <img src={HeroImg} alt="steribase 450 device black" />
       <Arrows className={styles.arrows} />
     </Box>
   );

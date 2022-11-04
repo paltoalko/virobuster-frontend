@@ -60,28 +60,94 @@
   width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+.textBox {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 441px) {
   .circleElement {
     height: 0.1em;
     width: 0.1em;
-    border: 1px solid white;
+    border: 0.5px solid white;
   }
   .popUpElement {
     margin-bottom: 3vh;
   }
 
   .longLineElement {
-    height: 30vh;
+    height: 27vh;
     width: 0.5px;
   }
   .popUpLeft {
     margin-top: 5vh;
   }
 
-  .textElement {
-    border-bottom: 0.5px solid white;
-  }
+  .textElement,
   .textElementLeft {
     border-bottom: 0.5px solid white;
+    font-size: 1.5vw !important;
+  }
+
+  .textElement {
+    padding: 2px 2px 2px 8px;
+  }
+  .textElementLeft {
+    padding: 2px 8px 2px 2px;
+  }
+  .textBox {
+    margin-bottom: 2px;
+  }
+}
+
+@media only screen and (min-width: 441px) and (max-width: 769px) {
+  .circleElement {
+    height: 0.1em;
+    width: 0.1em;
+    border: 0.5px solid white;
+  }
+  .popUpElement {
+    margin-bottom: 5vh;
+  }
+
+  .longLineElement {
+    height: 40vh;
+    width: 0.6px;
+  }
+  .popUpLeft {
+    margin-top: 5vh;
+  }
+
+  .textElement,
+  .textElementLeft {
+    border-bottom: 0.5px solid white;
+    font-size: 1.7vw !important;
+  }
+
+  .textElement {
+    padding: 2px 2px 2px 8px;
+  }
+  .textElementLeft {
+    padding: 2px 8px 2px 2px;
+  }
+  .textBox {
+    margin-bottom: 2.5px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+  .longLineElement {
+    height: 80vh;
+    width: 0.7px;
+  }
+  .textElement,
+  .textElementLeft {
+    border-bottom: 0.7px solid white;
+  }
+
+  .popUpsContainer {
+    margin-bottom: 3vh;
+  }
+  .circleElement {
+    border: 0.7px solid white;
   }
 }

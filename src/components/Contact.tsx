@@ -10,20 +10,20 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../assets/styles/Contact.module.css';
 import { ReactComponent as ContactUs } from '../assets/svg/contactUs.svg';
 
 const Contact: React.FC<{}> = () => {
-  const formValues = {
-    name: '',
-    message: '',
-    email: '',
-    subject: '',
-    sent: false,
-    emailError: false,
-  };
-  const [formData, setFormData] = useState(formValues);
+  // const formValues = {
+  //   name: '',
+  //   message: '',
+  //   email: '',
+  //   subject: '',
+  //   sent: false,
+  //   emailError: false,
+  // };
+  // const [formData, setFormData] = useState(formValues);
 
   return (
     <Box className={styles.container}>
@@ -122,7 +122,7 @@ const Contact: React.FC<{}> = () => {
           type="submit"
           variant="contained"
           onClick={(e) => e.preventDefault()}
-          sx={{ width: '200px', mb: '5vh' }}
+          className={styles.button}
         >
           Wyślij
         </Button>
