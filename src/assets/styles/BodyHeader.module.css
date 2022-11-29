@@ -8,9 +8,10 @@
 }
 
 .header {
-  font-size: 2.5vw !important;
+  font-size: 2vmax !important;
   line-height: 100%;
 }
 .headerSmall {
-  font-size: 3vw !important;
+  font-size: 2.5vmax !important;
+  text-align: center;
 }

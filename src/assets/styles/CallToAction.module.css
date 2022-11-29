@@ -6,6 +6,6 @@
   align-items: center;
 }
 .header {
-  font-size: 3vw !important;
-  margin-bottom: 2vh !important;
+  font-size: 3vmax !important;
+  margin-bottom: 2vmax !important;
 }
