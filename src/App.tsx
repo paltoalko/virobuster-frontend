@@ -2,9 +2,7 @@ import { Box, ThemeProvider } from '@mui/material';
 import React, { useRef } from 'react';
 import theme from './assets/theme';
 import Header from './components/Header';
-import HeroView from './components/HeroView';
 import DetailsView from './components/DetailsView';
-import InformationView from './components/InformationView';
 import PhotosView from './components/PhotosView';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -13,6 +11,7 @@ import './assets/styles/style.css';
 import VideoView from './components/VideoView';
 import FAQ from './components/FAQ';
 import AboutUs from './components/AboutUs';
+import TopContainer from 'components/TopContainer';
 
 function App() {
   const aboutUs = useRef<HTMLInputElement>(null);
@@ -29,12 +28,13 @@ function App() {
           faqRef={faq}
           detailsRef={details}
         />
-        <HeroView />
+
         <Box className={'container-middle'}>
-          <InformationView />
+          <TopContainer />
           <VideoView />
-          <BodyHeader />
+          {/* <BodyHeader /> */}
           <PhotosView />
+
           <Box ref={details}>
             <DetailsView />
           </Box>
