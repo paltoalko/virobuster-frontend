@@ -1,9 +1,8 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import HeroImg from '../assets/img/virobuster.png';
 import styles from '../assets/styles/HeroView.module.css';
 import { ReactComponent as Logo } from '../assets/svg/logo.svg';
-import { ReactComponent as Arrows } from '../assets/svg/arrows.svg';
+import HeroImg from '../assets/img/virobuster.png';
 
 const HeroView: React.FC<{}> = () => {
   return (
@@ -24,10 +23,13 @@ const HeroView: React.FC<{}> = () => {
         fontWeight="100"
         className={styles.subtitle}
       >
-        Czyste Powietrze w swojej najpiękniejszej postaci
+        Oczyszczacz powietrza UVC dla profesjonalistów
       </Typography>
-      <img src={HeroImg} alt="steribase 450 device black" />
-      <Arrows className={styles.arrows} />
+      <img
+        src={HeroImg}
+        alt="steribase 450 device black"
+        className={styles.heroImg}
+      />
     </Box>
   );
 };

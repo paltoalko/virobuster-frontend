@@ -29,16 +29,13 @@
   text-transform: uppercase;
 }
 
-.arrows {
-  display: none;
-}
-
-img {
+.heroImg {
   width: 100%;
+  height: auto;
   object-fit: contain;
-  position: absolute;
   z-index: -100;
-  opacity: 0.3;
+  position: absolute;
+  opacity: 0.2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -51,11 +48,5 @@ img {
   }
   .subtitle {
     font-size: 3vw !important;
-  }
-
-  .arrows {
-    position: absolute;
-    bottom: 3vh;
-    display: block;
   }
 }
