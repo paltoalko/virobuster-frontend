@@ -6,7 +6,7 @@ import DetailsView from './components/DetailsView';
 import PhotosView from './components/PhotosView';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import BodyHeader from './components/BodyHeader';
+// import BodyHeader from './components/BodyHeader';
 import './assets/styles/style.css';
 import VideoView from './components/VideoView';
 import FAQ from './components/FAQ';
