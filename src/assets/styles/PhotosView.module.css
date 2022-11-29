@@ -4,6 +4,8 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+  gap: 5vmax;
+  margin: 5vmax;
 }
 
 .header {
@@ -22,12 +24,89 @@
   z-index: -100;
 }
 
-@media only screen and (max-width: 768px) {
-  .svg {
-    scale: 0.7;
+.photoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.imageBox {
+  display: flex;
+  position: relative;
+}
+
+.image {
+  opacity: 0.7;
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageTitle {
+  font-size: 1.5em !important;
+}
+
+.lineElement {
+  height: 1px;
+  width: 30%;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 1em;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 1em;
+}
+
+.textElement {
+  text-align: justify;
+}
+
+.textBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  margin: 1em;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #fafafa;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.circleActive {
+  border: 1px solid #fafafa;
+  width: 9px;
+  height: 9px;
+  border-radius: 15px;
+}
+
+.circleBox {
+  display: flex;
+  gap: 1em;
+}
+
+@media only screen and (max-width: 960px) {
+  .photoContainer {
+    flex-wrap: wrap;
   }
 
-  .sideTitle {
-    margin-bottom: 400px;
+  .textContainer {
+    max-width: none;
   }
 }
