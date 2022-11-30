@@ -1,5 +1,5 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
-import React, { useRef } from 'react';
+import React, { MutableRefObject, useRef } from 'react';
 import styles from '../assets/styles/PhotosView.module.css';
 import RoomImg from '../assets/img/room.png';
 import LabImg from '../assets/img/lab.png';
@@ -12,6 +12,10 @@ interface IProps {
   text: string;
   img: string;
   left?: boolean;
+}
+
+interface PhotosProps {
+  contactRef: MutableRefObject<HTMLButtonElement>;
 }
 
 const ImageElement: React.FC<IProps> = ({ title, text, img, left }) => {
@@ -102,7 +106,7 @@ const ImageElement: React.FC<IProps> = ({ title, text, img, left }) => {
   );
 };
 
-const PhotosView: React.FC<{}> = () => {
+const PhotosView: React.FC<PhotosProps> = ({ contactRef }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -125,7 +129,7 @@ const PhotosView: React.FC<{}> = () => {
           transition: 'all 2s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
         }}
       >
-        <CallToAction />
+        <CallToAction contactRef={contactRef} />
       </motion.div>
 
       <ImageElement

@@ -1,8 +1,12 @@
 import { Box, Typography, Button } from '@mui/material';
-import React from 'react';
+import React, { MutableRefObject } from 'react';
 import styles from '../assets/styles/CallToAction.module.css';
 
-const CallToAction: React.FC<{}> = () => {
+interface IProps {
+  contactRef: MutableRefObject<HTMLButtonElement>;
+}
+
+const CallToAction: React.FC<IProps> = ({ contactRef }) => {
   return (
     <Box className={styles.ctaContainer}>
       <Typography
@@ -14,7 +18,12 @@ const CallToAction: React.FC<{}> = () => {
       >
         Masz pytania?
       </Typography>
-      <Button variant="outlined" color="secondary" size="large">
+      <Button
+        variant="outlined"
+        color="secondary"
+        size="large"
+        onClick={() => contactRef.current.scrollIntoView()}
+      >
         Napisz do nas
       </Button>
     </Box>

@@ -6,7 +6,7 @@ import DetailsView from './components/DetailsView';
 import PhotosView from './components/PhotosView';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-// import BodyHeader from './components/BodyHeader';
+import BodyHeader from './components/BodyHeader';
 import './assets/styles/style.css';
 import VideoView from './components/VideoView';
 import FAQ from './components/FAQ';
@@ -18,6 +18,12 @@ function App() {
   const faq = useRef<HTMLInputElement>(null);
   const details = useRef<HTMLInputElement>(null);
   const contact = useRef<HTMLInputElement>(null);
+
+  window.onbeforeunload = function () {
+    if (window.scrollTo) window.scrollTo(0, 0);
+    if (history && history.scrollRestoration)
+      history.scrollRestoration = 'manual';
+  };
 
   return (
     <Box>
@@ -32,8 +38,8 @@ function App() {
         <Box className={'container-middle'}>
           <TopContainer />
           <VideoView />
-          {/* <BodyHeader /> */}
-          <PhotosView />
+          <BodyHeader />
+          <PhotosView contactRef={contact} />
 
           <Box ref={details}>
             <DetailsView />
