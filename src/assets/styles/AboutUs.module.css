@@ -14,17 +14,10 @@
 }
 
 .header {
-  font-size: 3vw !important;
   margin: 5vh 0 5vh !important;
 }
 
-.subheader {
-  margin: 1vh;
-  font-size: 2vw !important;
-}
-
 .cite {
-  font-size: 1.5vw !important;
   margin-bottom: 2vh !important;
   text-align: center;
 }
@@ -38,9 +31,6 @@
   .header {
     margin: 3vh 0 3vh !important;
   }
-  .text {
-    font-size: 1.5vh !important;
-  }
 
   .aboutBox {
     flex-direction: column-reverse;
@@ -48,8 +38,6 @@
   }
 
   .cite {
-    font-size: 1.5vh !important;
-
     margin-bottom: 1vh;
   }
 }

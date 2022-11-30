@@ -18,6 +18,7 @@ const AboutUs: React.FC<{}> = () => {
         color="primary"
         fontWeight={200}
         fontStyle="italic"
+        variant="h6"
         className={styles.cite}
       >
         „Naukowo udowodnione innowacje dla wysokiej jakości produktów,
