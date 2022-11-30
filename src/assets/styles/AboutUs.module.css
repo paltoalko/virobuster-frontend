@@ -18,8 +18,8 @@
 }
 
 .cite {
-  margin-bottom: 2vh !important;
   text-align: center;
+  margin: 0 2vmax 2vmax 2vmax !important;
 }
 
 .text {
