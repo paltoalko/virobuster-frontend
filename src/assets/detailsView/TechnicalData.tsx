@@ -14,7 +14,7 @@ const TextPopUp: React.FC<TextPopUpProps> = ({ title, left }) => {
       <Box className={styles.textBox}>
         <Typography
           variant="body1"
-          fontWeight={100}
+          fontWeight={200}
           color="primary"
           className={left ? styles.textElementLeft : styles.textElement}
         >

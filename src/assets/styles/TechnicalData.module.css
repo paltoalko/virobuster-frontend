@@ -5,7 +5,7 @@
   align-items: center;
   height: 100%;
   width: 95%;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .longLineElement {
@@ -56,6 +56,7 @@
   justify-content: flex-start;
   height: 100%;
   width: 50%;
+  margin-top: 5vh;
 }
 
 .textBox {
@@ -73,11 +74,15 @@
   }
 
   .longLineElement {
-    height: 65vh;
+    height: 50vh;
     width: 0.5px;
   }
   .popUpLeft {
     margin-top: 10vh;
+  }
+
+  .popUpRight {
+    margin-top: 0vh;
   }
 
   .textElement,
@@ -95,6 +100,10 @@
   .textBox {
     margin-bottom: 2px;
   }
+
+  .popUpsContainer {
+    gap: 5vw;
+  }
 }
 
 @media only screen and (min-width: 441px) and (max-width: 769px) {
@@ -108,11 +117,14 @@
   }
 
   .longLineElement {
-    height: 40vh;
+    height: 60vh;
     width: 0.6px;
   }
   .popUpLeft {
-    margin-top: 5vh;
+    margin-top: 10vh;
+  }
+  .popUpRight {
+    margin-top: 0vh;
   }
 
   .textElement,
