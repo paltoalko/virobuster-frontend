@@ -7,18 +7,25 @@ import SafetyImg from '../assets/img/safety.png';
 import { motion, useInView } from 'framer-motion';
 import CallToAction from './CallToAction';
 
-interface IProps {
-  title: string;
+export interface IProps {
+  title?: string;
   text: string;
   img: string;
   left?: boolean;
+  disableAnimation?: boolean;
 }
 
 interface PhotosProps {
   contactRef: MutableRefObject<HTMLButtonElement>;
 }
 
-const ImageElement: React.FC<IProps> = ({ title, text, img, left }) => {
+export const ImageElement: React.FC<IProps> = ({
+  title,
+  text,
+  img,
+  left,
+  disableAnimation,
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const matches = useMediaQuery('(max-width:960px)');
@@ -29,7 +36,7 @@ const ImageElement: React.FC<IProps> = ({ title, text, img, left }) => {
       style={{
         transform: isInView ? 'none' : 'translateX(-10vw)',
         opacity: isInView ? 1 : 0,
-        transition: 'all 2s ',
+        transition: disableAnimation ? 'none' : 'all 2s',
       }}
     >
       <Box className={styles.imageBox}>
@@ -66,7 +73,7 @@ const ImageElement: React.FC<IProps> = ({ title, text, img, left }) => {
           ? 'translateX(-10vw)'
           : 'translateX(10vw)',
         opacity: isInView ? 1 : 0,
-        transition: 'all 2s ',
+        transition: disableAnimation ? 'none' : 'all 2s',
       }}
     >
       {!left && (
