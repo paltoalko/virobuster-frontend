@@ -13,7 +13,7 @@ const TextPopUp: React.FC<TextPopUpProps> = ({ title, left }) => {
       {!left && <Box className={styles.circleElement} />}
       <Box className={styles.textBox}>
         <Typography
-          variant="h6"
+          variant="body1"
           fontWeight={100}
           color="primary"
           className={left ? styles.textElementLeft : styles.textElement}
