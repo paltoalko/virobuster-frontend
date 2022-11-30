@@ -1,43 +1,13 @@
 .container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.aboutBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.header {
-  margin: 5vh 0 5vh !important;
+  gap: 3vmax;
+  margin: 5vmax;
 }
 
 .cite {
   text-align: center;
-  margin: 0 2vmax 2vmax 2vmax !important;
-}
-
-.text {
-  text-align: justify;
-  padding: 0 2vw;
-}
-
-@media only screen and (max-width: 768px) {
-  .header {
-    margin: 3vh 0 3vh !important;
-  }
-
-  .aboutBox {
-    flex-direction: column-reverse;
-    width: 100%;
-  }
-
-  .cite {
-    margin-bottom: 1vh;
-  }
 }
