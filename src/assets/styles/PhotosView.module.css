@@ -32,7 +32,13 @@
 }
 .imageBox {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .image {
