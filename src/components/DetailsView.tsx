@@ -7,35 +7,21 @@ import styles from '../assets/styles/DetailsView.module.css';
 import { ReactComponent as SideLogo } from '../assets/svg/logo-sideways.svg';
 
 const DetailsView: React.FC<{}> = () => {
-  const [activeTechnicalData, setActiveTechnicalData] = useState(true);
-  const [activePhotos, setActivePhotos] = useState(false);
-  const [activeDetails, setActiveDetails] = useState(false);
+  const [activeComponent, setActiveComponent] = useState('technicalData');
 
   const handlePress = (e) => {
-    if (e.target.name === 'technicalData') {
-      setActiveTechnicalData(true);
-      setActivePhotos(false);
-      setActiveDetails(false);
-    } else if (e.target.name === 'details') {
-      setActiveTechnicalData(false);
-      setActivePhotos(false);
-      setActiveDetails(true);
-    } else if (e.target.name === 'photos') {
-      setActiveTechnicalData(false);
-      setActivePhotos(true);
-      setActiveDetails(false);
-    }
+    setActiveComponent(e.target.name);
   };
   return (
     <Box className={styles.detailsContainer}>
-      {activeTechnicalData && <TechnicalData />}
-      {activePhotos && <Photos />}
-      {activeDetails && <Details />}
+      {activeComponent === 'technicalData' && <TechnicalData />}
+      {activeComponent === 'photos' && <Photos />}
+      {activeComponent === 'details' && <Details />}
 
       <SideLogo className={styles.sideLogo} />
       <Box className={styles.buttonBox}>
         <Button
-          variant={activePhotos ? 'contained' : 'outlined'}
+          variant={activeComponent === 'photos' ? 'contained' : 'outlined'}
           className={styles.button}
           color="primary"
           name="photos"
@@ -45,7 +31,9 @@ const DetailsView: React.FC<{}> = () => {
           Zdjęcia
         </Button>
         <Button
-          variant={activeTechnicalData ? 'contained' : 'outlined'}
+          variant={
+            activeComponent === 'technicalData' ? 'contained' : 'outlined'
+          }
           color="primary"
           className={styles.button}
           name="technicalData"
@@ -55,14 +43,13 @@ const DetailsView: React.FC<{}> = () => {
           Opis
         </Button>
         <Button
-          variant={activeDetails ? 'contained' : 'outlined'}
+          variant={activeComponent === 'details' ? 'contained' : 'outlined'}
           color="primary"
-          className={styles.button}
           name="details"
           sx={{ minWidth: '9vw', boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
-          Parametry
+          Dane Techniczne
         </Button>
       </Box>
     </Box>
