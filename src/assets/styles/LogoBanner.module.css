@@ -1,0 +1,12 @@
+.svg {
+  max-height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin: 5vh 5vh 5vh 5vh;
+}
