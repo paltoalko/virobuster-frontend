@@ -1,9 +1,9 @@
 import { Box, Typography, useMediaQuery } from '@mui/material';
 import React, { MutableRefObject, useRef } from 'react';
 import styles from '../assets/styles/PhotosView.module.css';
-import RoomImg from '../assets/img/room.png';
-import LabImg from '../assets/img/lab.png';
-import SafetyImg from '../assets/img/safety.png';
+import VirobusterRoom from '../assets/img/virobuster-standing.png';
+import WomanBreath from '../assets/img/woman-breathe.png';
+import VirobusterMirror from '../assets/img/virobuster-mirror.png';
 import { motion, useInView } from 'framer-motion';
 import CallToAction from './CallToAction';
 
@@ -82,7 +82,6 @@ export const ImageElement: React.FC<IProps> = ({
         </Box>
       )}
       <Box className={styles.textBox}>
-        {!left && <Box className={styles.lineElement} />}
         <Box className={styles.textContainer}>
           <Typography
             color="primary"
@@ -101,7 +100,6 @@ export const ImageElement: React.FC<IProps> = ({
             {text}
           </Typography>
         </Box>
-        {left && <Box className={styles.lineElement} />}
       </Box>
 
       {left && (
@@ -119,14 +117,14 @@ const PhotosView: React.FC<PhotosProps> = ({ contactRef }) => {
   return (
     <Box className={styles.container}>
       <ImageElement
-        title="Rezultaty są oczywiste: idealne powietrze w każdej sytuacji."
-        text="Niezależnie od tego, czy jest to salon, biuro, klasa, siłownia, czy  sala ćwiczeń spędzamy dwie trzecie naszego życia w pomieszczeniach. Krótko mówiąc, są one naszą rzeczywistością. Ich design ma bezpośredni wpływ na nasz nastrój - i na nasze zdrowie. Nic więc dziwnego, że wymagania dla warunków życia i jakości powietrza od dawna są ze sobą powiązane. W końcu powietrze - to nic innego jak samo życie - i tylko to!"
-        img={RoomImg}
+        title="Idealne powietrze w każdej sytuacji."
+        text="Niezależnie od tego, czy jest to salon, biuro, klasa, siłownia, czy sala ćwiczeń spędzamy dwie trzecie naszego życia w pomieszczeniach. Krótko mówiąc, są one naszą rzeczywistością. Ich design ma bezpośredni wpływ na nasz nastrój - i na nasze zdrowie. Nic więc dziwnego, że wymagania dla warunków życia i jakości powietrza od dawna są ze sobą powiązane. W końcu powietrze - to nic innego jak samo życie - i tylko to!"
+        img={VirobusterRoom}
       />
       <ImageElement
         title="Jest dokładnie przebadany naukowo."
         text="Oczyszczone powietrze może być podstawą, ale z pewnością nie można traktować go jako oczywistość. Wyziewy (wydzieliny), drobnoustroje bakterie, grzyby i wszystkie zakaźne aerozole mogą mieć trwały wpływ na jakość powietrza w pomieszczeniach.Dzięki certyfikowanej technologii UVPE, STERIBASE® 450 Plus zmniejsza ryzyko infekcji jak żaden inny system oczyszczania, zostało naukowo udowodnione, że neutralizuje surogaty SARSCoV-2. Czego więcej możesz oczekiwać?"
-        img={LabImg}
+        img={WomanBreath}
         left={true}
       />
       <motion.div
@@ -142,7 +140,7 @@ const PhotosView: React.FC<PhotosProps> = ({ contactRef }) => {
       <ImageElement
         title="Nie tylko czyste powietrze, ale przede wszystkim sterylne."
         text="Niezależnie od tego, czy jest używany w żłobkach, biurach urzędów miasta lub siedzibach firm, innowacyjne urządzenie wolnostojące z wbudowanym wentylatorem jest wygodne, wydajne i elastyczne w każdym typie zabudowy. Estetyczny i przyjazny dla środowiska z zerową emisją, jest mobilny, cichy i tani w utrzymaniu. Co ważne, jest bezpieczny: zamknięty system UV-C oznacza brak szkodliwego promieniowania światła UV. Teraz spokojnie możesz oczekiwać więcej od systemu oczyszczania powietrza. Robimy w końcu to samo."
-        img={SafetyImg}
+        img={VirobusterMirror}
       />
 
       <Typography className={styles.sideTitle} variant="h1" fontWeight="bold">
