@@ -11,7 +11,9 @@ import './assets/styles/style.css';
 import VideoView from './components/VideoView';
 import FAQ from './components/FAQ';
 import AboutUs from './components/AboutUs';
-import TopContainer from 'components/TopContainer';
+import HeroView from 'components/HeroView';
+import InformationView from 'components/InformationView';
+import LogoBanner from 'components/LogoBanner';
 
 function App() {
   const aboutUs = useRef<HTMLInputElement>(null);
@@ -36,7 +38,9 @@ function App() {
         />
 
         <Box className={'container-middle'}>
-          <TopContainer />
+          <HeroView />
+          <InformationView />
+          <LogoBanner />
           <VideoView />
           <BodyHeader />
           <PhotosView contactRef={contact} />
