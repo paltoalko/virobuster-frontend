@@ -1,16 +1,11 @@
 .headers {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5;
+  margin: 5vh;
 }
 
-.header {
-  font-size: 2vmax !important;
-  line-height: 100%;
-}
 .headerSmall {
   font-size: 2.5vmax !important;
   text-align: center;

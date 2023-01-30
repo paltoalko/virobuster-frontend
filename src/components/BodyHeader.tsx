@@ -6,21 +6,12 @@ const PhotosView: React.FC<{}> = () => {
   return (
     <Box className={styles.headers}>
       <Typography
-        fontWeight={200}
-        fontStyle="italic"
-        className={styles.header}
-        color="primary"
-        sx={{ mt: '5vh' }}
-      >
-        Naukowo udowodnione:
-      </Typography>
-      <Typography
-        fontWeight={500}
+        fontWeight={400}
         fontStyle="bold"
         className={styles.headerSmall}
         color="primary"
       >
-        Czyste powietrze jest najlepsze.
+        Zadbaj o zdrowie
       </Typography>
     </Box>
   );
