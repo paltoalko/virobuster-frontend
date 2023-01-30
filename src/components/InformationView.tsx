@@ -53,14 +53,24 @@ const InformationView: React.FC<{}> = () => {
           }}
         >
           <LeftLeaf />
-          <Typography
-            variant="h6"
-            color="primary"
-            fontWeight="300"
-            className={styles.header}
-          >
-            STERIBASE® 450 PLUS - Ogólny zwycięzca
-          </Typography>
+          <Box>
+            <Typography
+              variant="h6"
+              color="primary"
+              fontWeight="300"
+              className={styles.header}
+            >
+              STERIBASE® 450 PLUS - Ogólny zwycięzca
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              color="primary"
+              fontWeight="200"
+              sx={{ fontSize: '1.2vmax' }}
+            >
+              Wyprodukowany w Windhagen Niemcy
+            </Typography>
+          </Box>
           <RightLeaf className={styles.leafs} />
         </motion.div>
         <Box sx={{ display: 'flex' }}>
