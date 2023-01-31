@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   gap: 5vw;
-  height: 100vh;
+  z-index: 9999;
 }
 
 .middleContainer {
@@ -16,20 +16,20 @@
 }
 
 .photoBox {
-  width: 40vw;
-  max-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 img {
-  max-height: 100%;
-  width: auto;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
 }
 
 .circlesBox {
-  margin: 5vh;
+  margin: 5vh 5vh 3vh;
   display: flex;
   gap: 1vw;
   justify-content: center;
@@ -45,24 +45,4 @@ img {
 }
 .circleActive {
   background-color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  img {
-    max-height: 100%;
-    max-width: 150%;
-  }
-
-  .popUpsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 5vw;
-    height: 45vh;
-  }
-
-  .circlesBox {
-    margin: 2vh;
-  }
 }

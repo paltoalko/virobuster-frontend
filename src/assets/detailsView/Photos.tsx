@@ -5,12 +5,12 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 const photos = [
-  { id: 0, src: require('../img/steribase0.png'), alt: 'virubuster' },
-  { id: 1, src: require('../img/steribase1.png'), alt: 'virubuster' },
-  { id: 2, src: require('../img/steribase2.png'), alt: 'virubuster' },
-  { id: 3, src: require('../img/steribase3.png'), alt: 'virubuster' },
-  { id: 4, src: require('../img/steribase4.png'), alt: 'virubuster' },
-  { id: 5, src: require('../img/steribase5.png'), alt: 'virubuster' },
+  { id: 0, src: require('../img/1.jpeg'), alt: 'virubuster' },
+  { id: 1, src: require('../img/2.jpeg'), alt: 'virubuster' },
+  { id: 2, src: require('../img/3.jpeg'), alt: 'virubuster' },
+  { id: 3, src: require('../img/4.jpeg'), alt: 'virubuster' },
+  { id: 4, src: require('../img/5.jpeg'), alt: 'virubuster' },
+  { id: 5, src: require('../img/6.jpeg'), alt: 'virubuster' },
 ];
 
 const Photos: React.FC<{}> = () => {
@@ -26,17 +26,9 @@ const Photos: React.FC<{}> = () => {
 
   const handlePress = (direction: string) => {
     if (direction === 'left') {
-      if (active == 0) {
-        setActive(5);
-      } else {
-        setActive(active - 1);
-      }
+      setActive(active === 0 ? 5 : active - 1);
     } else if (direction === 'right') {
-      if (active == 5) {
-        setActive(0);
-      } else {
-        setActive(active + 1);
-      }
+      setActive(active === 5 ? 0 : active + 1);
     }
   };
 
