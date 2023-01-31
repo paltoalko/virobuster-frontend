@@ -30,18 +30,18 @@ const TechnicalData: React.FC<{}> = () => {
   return (
     <Box className={styles.popUpsContainer}>
       <Box className={styles.popUpLeft}>
-        <TextPopUp title="Bezkonkurencyjna efektywność" left={true} />
         <TextPopUp title="Wyjątkowy cichy" left={true} />
+        <TextPopUp title="Udowodniona skuteczność w 99.99%" left={true} />
         <TextPopUp title="Wysoko skoncentrowane UV-C" left={true} />
         <TextPopUp
           title="Efektywny w pomieszczeniach nawet do 180 m2"
           left={true}
         />
-        <TextPopUp title="Konserwacja co 2 do 5 lat" left={true} />
+        <TextPopUp title="Konserwacja co 6 lat" left={true} />
       </Box>
       <Box className={styles.longLineElement} />
       <Box className={styles.popUpRight}>
-        <TextPopUp title="Udowodniona skuteczność w 99.99%" />
+        <TextPopUp title="Opatentowany, zaprojektowany oraz wyprodukowany w Niemczech" />
         <TextPopUp title="Certyfikowana i sprawdzona technologia" />
         <TextPopUp title="Wypróbowany i przetestowany w szpitalach" />
         <TextPopUp title="Bezpieczny dla wszystkich" />

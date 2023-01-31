@@ -47,7 +47,7 @@
   justify-content: flex-end;
   height: 100%;
   width: 50%;
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 .popUpRight {
   display: flex;
@@ -77,12 +77,13 @@
     height: 55vh;
     width: 0.5px;
   }
-  .popUpLeft {
-    margin-top: 10vh;
-  }
 
   .popUpRight {
     margin-top: 0vh;
+  }
+
+  .popUpLeft {
+    margin-top: 5vh;
   }
 
   .textElement,
