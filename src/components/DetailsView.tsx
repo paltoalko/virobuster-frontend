@@ -25,10 +25,19 @@ const DetailsView: React.FC<{}> = () => {
           className={styles.button}
           color="primary"
           name="photos"
-          sx={{ minWidth: '9vw', boxShadow: '7' }}
+          sx={{ boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
           Zdjęcia
+        </Button>
+        <Button
+          variant={activeComponent === 'details' ? 'contained' : 'outlined'}
+          color="primary"
+          name="details"
+          sx={{ boxShadow: '7' }}
+          onClick={(e) => handlePress(e)}
+        >
+          Dane Techniczne
         </Button>
         <Button
           variant={
@@ -37,19 +46,10 @@ const DetailsView: React.FC<{}> = () => {
           color="primary"
           className={styles.button}
           name="technicalData"
-          sx={{ minWidth: '9vw', boxShadow: '7' }}
+          sx={{ boxShadow: '7' }}
           onClick={(e) => handlePress(e)}
         >
           Opis
-        </Button>
-        <Button
-          variant={activeComponent === 'details' ? 'contained' : 'outlined'}
-          color="primary"
-          name="details"
-          sx={{ minWidth: '9vw', boxShadow: '7' }}
-          onClick={(e) => handlePress(e)}
-        >
-          Dane Techniczne
         </Button>
       </Box>
     </Box>
