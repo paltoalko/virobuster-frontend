@@ -62,7 +62,12 @@ const InformationView: React.FC<{}> = () => {
             >
               STERIBASE® 450 PLUS - Ogólny zwycięzca
             </Typography>
-            <Typography variant="subtitle1" color="primary" fontWeight="200">
+            <Typography
+              variant="subtitle1"
+              color="primary"
+              fontWeight="200"
+              className={styles.subheader}
+            >
               Wyprodukowany w Windhagen Niemcy
             </Typography>
           </Box>

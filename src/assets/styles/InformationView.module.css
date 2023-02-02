@@ -22,8 +22,12 @@
 }
 
 .header {
-  font-size: 1.5vmax;
+  font-size: 1.5vmax !important;
   text-transform: uppercase;
+}
+
+.subheader {
+  font-size: 1.4vmax !important;
 }
 
 .listContainer {
