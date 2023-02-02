@@ -21,7 +21,7 @@ const AboutUs: React.FC<{}> = () => {
         skutecznej higieny powietrza i bezpieczeństwa”
       </Typography>
       <ImageElement
-        title="Od ponad 15 lat VIROBUSTER®"
+        title="Od ponad 20 lat VIROBUSTER®"
         text="Z siedzibą w Windhagen
           w Niemczech specjalizuje się w dezynfekcji powietrza UV-C. W 2003 roku
           ustanowiliśmy pierwszy na świecie patent na technologię opartą na UVPE
