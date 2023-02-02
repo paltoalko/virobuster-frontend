@@ -44,20 +44,26 @@ const Contact: React.FC<{}> = () => {
               className={styles.icon}
             />
             <Box>
-              <Typography
-                variant="subtitle1"
+              <Link
+                href="tel:+48-123-456-789"
+                underline="none"
                 color="secondary"
-                fontWeight={300}
               >
-                Zadzwoń do nas!
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="secondary"
-                fontWeight={400}
-              >
-                +48 123 456 789
-              </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="secondary"
+                  fontWeight={300}
+                >
+                  Zadzwoń do nas!
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="secondary"
+                  fontWeight={400}
+                >
+                  +48 123 456 789
+                </Typography>
+              </Link>
             </Box>
           </Box>
           <Box className={styles.contactCol}>
@@ -67,20 +73,26 @@ const Contact: React.FC<{}> = () => {
               className={styles.icon}
             />
             <Box>
-              <Typography
-                variant="subtitle1"
+              <Link
+                href="mailto:virobuster@virobuster.pl"
+                underline="none"
                 color="secondary"
-                fontWeight={300}
               >
-                Wyślij do nas maila
-              </Typography>
-              <Typography
-                variant="subtitle1"
-                color="secondary"
-                fontWeight={400}
-              >
-                virobuster@virobuster.pl
-              </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="secondary"
+                  fontWeight={300}
+                >
+                  Wyślij do nas maila
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="secondary"
+                  fontWeight={400}
+                >
+                  virobuster@virobuster.pl
+                </Typography>
+              </Link>
             </Box>
           </Box>
           <Box className={styles.contactCol}>
