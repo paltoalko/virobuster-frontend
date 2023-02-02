@@ -5,7 +5,6 @@ import Header from './components/Header';
 import DetailsView from './components/DetailsView';
 import PhotosView from './components/PhotosView';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import BodyHeader from './components/BodyHeader';
 import './assets/styles/style.css';
 import VideoView from './components/VideoView';
@@ -36,7 +35,6 @@ function App() {
           faqRef={faq}
           detailsRef={details}
         />
-
         <Box className={'container-middle'}>
           <HeroView />
           <InformationView />
@@ -44,7 +42,6 @@ function App() {
           <VideoView />
           <BodyHeader />
           <PhotosView contactRef={contact} />
-
           <Box ref={details}>
             <DetailsView />
           </Box>
@@ -57,7 +54,6 @@ function App() {
           <Box ref={contact}>
             <Contact />
           </Box>
-          <Footer />
         </Box>
       </ThemeProvider>
     </Box>

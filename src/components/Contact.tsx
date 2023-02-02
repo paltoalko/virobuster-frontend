@@ -1,132 +1,133 @@
-import { AccountCircle, AlternateEmail } from '@mui/icons-material';
-import CommentIcon from '@mui/icons-material/Comment';
-
-import {
-  Box,
-  Button,
-  Input,
-  InputAdornment,
-  InputLabel,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/Contact.module.css';
-import { ReactComponent as ContactUs } from '../assets/svg/contactUs.svg';
+import Background from '../assets/img/footer-bkg.png';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+const stylesImg = {
+  container: {
+    backgroundImage: `url(${Background})`,
+    height: `100%`,
+    width: `100%`,
+    backgroundSize: `cover`,
+  },
+};
 
 const Contact: React.FC<{}> = () => {
-  // const formValues = {
-  //   name: '',
-  //   message: '',
-  //   email: '',
-  //   subject: '',
-  //   sent: false,
-  //   emailError: false,
-  // };
-  // const [formData, setFormData] = useState(formValues);
-
   return (
-    <Box className={styles.container}>
-      <form className={styles.form}>
+    <Box style={stylesImg.container} className={styles.container}>
+      <Box className={styles.overlay} boxShadow={2}>
         <Typography
           variant="h4"
-          color="#2F2E41"
-          fontWeight={200}
+          color="secondary"
+          fontWeight={300}
           className={styles.header}
         >
           Odezwij się do nas
         </Typography>
         <Typography
           variant="h6"
-          color="#2F2E41"
           fontStyle="italic"
-          fontWeight={200}
+          color="secondary"
+          fontWeight={300}
           className={styles.subheader}
         >
           Jesteś zainteresowany produktem? Albo może masz jeszcze jakieś
           pytania?
         </Typography>
-        <Box className={styles.formContainer}>
-          <Box>
-            <Box className={styles.inputSmall}>
-              <InputLabel
-                htmlFor="input-with-icon-adornment"
-                className={styles.label}
-              >
-                Imię i nazwisko
-              </InputLabel>
-              <Input
+        <Box className={styles.contactBox}>
+          <Box className={styles.contactCol}>
+            <CallIcon
+              color="secondary"
+              fontSize="large"
+              className={styles.icon}
+            />
+            <Box>
+              <Typography
+                variant="subtitle1"
                 color="secondary"
-                id="input-with-icon-adornment"
-                required
-                fullWidth
-                type="text"
-                startAdornment={
-                  <InputAdornment position="start">
-                    <AccountCircle className={styles.icon} />
-                  </InputAdornment>
-                }
-              />
-            </Box>
-
-            <Box className={styles.inputSmall}>
-              <InputLabel
-                htmlFor="input-with-icon-adornment"
-                className={styles.label}
+                fontWeight={300}
               >
-                Adres Email
-              </InputLabel>
-              <Input
+                Zadzwoń do nas!
+              </Typography>
+              <Typography
+                variant="subtitle1"
                 color="secondary"
-                id="input-with-icon-adornment"
-                required
-                fullWidth
-                type="email"
-                startAdornment={
-                  <InputAdornment position="start">
-                    <AlternateEmail className={styles.icon} />
-                  </InputAdornment>
-                }
-              />
-            </Box>
-            <Box className={styles.inputTextField}>
-              <InputLabel
-                htmlFor="input-with-icon-adornment"
-                className={styles.label}
+                fontWeight={400}
               >
-                Treść
-              </InputLabel>
-              <TextField
-                color="secondary"
-                id="textfield"
-                variant="standard"
-                required
-                type="text"
-                fullWidth
-                multiline
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <CommentIcon className={styles.icon} />
-                    </InputAdornment>
-                  ),
-                }}
-              />
+                +48 123 456 789
+              </Typography>
             </Box>
           </Box>
-          <ContactUs className={styles.svg} />
+          <Box className={styles.contactCol}>
+            <EmailIcon
+              color="secondary"
+              fontSize="large"
+              className={styles.icon}
+            />
+            <Box>
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                fontWeight={300}
+              >
+                Wyślij do nas maila
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                fontWeight={400}
+              >
+                virobuster@virobuster.pl
+              </Typography>
+            </Box>
+          </Box>
+          <Box className={styles.contactCol}>
+            <FmdGoodIcon
+              color="secondary"
+              fontSize="large"
+              className={styles.icon}
+            />
+            <Box>
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                fontWeight={300}
+              >
+                Köhlershohner Str. 60, D-53578 Windhagen
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                color="secondary"
+                fontWeight={400}
+              >
+                <Link
+                  href="https://www.virobuster.com/en"
+                  target="_blank"
+                  underline="none"
+                  color="secondary"
+                >
+                  https://www.virobuster.com/en
+                </Link>
+              </Typography>
+            </Box>
+          </Box>
         </Box>
-
-        <Button
-          color="success"
-          type="submit"
-          variant="contained"
-          onClick={(e) => e.preventDefault()}
-          className={styles.button}
+      </Box>
+      <Box className={styles.footer}>
+        <Typography
+          className={styles.text}
+          color="black"
+          fontWeight={300}
+          sx={{ mr: 'auto' }}
         >
-          Wyślij
-        </Button>
-      </form>
+          Virobuster®
+        </Typography>
+        <Typography className={styles.text} color="black" fontWeight={300}>
+          Copyright 2022 MWES
+        </Typography>
+      </Box>
     </Box>
   );
 };
