@@ -20,12 +20,6 @@ function App() {
   const details = useRef<HTMLInputElement>(null);
   const contact = useRef<HTMLInputElement>(null);
 
-  window.onbeforeunload = function () {
-    if (window.scrollTo) window.scrollTo(0, 0);
-    if (history && history.scrollRestoration)
-      history.scrollRestoration = 'manual';
-  };
-
   return (
     <Box>
       <ThemeProvider theme={theme}>
