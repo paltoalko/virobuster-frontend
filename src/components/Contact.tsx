@@ -1,26 +1,19 @@
 import { Box, Link, Typography } from '@mui/material';
 import React from 'react';
 import styles from '../assets/styles/Contact.module.css';
-import Background from '../assets/img/footer-bkg.png';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
-const stylesImg = {
-  container: {
-    backgroundImage: `url(${Background})`,
-    height: `100%`,
-    width: `100%`,
-    backgroundSize: `cover`,
-  },
-};
+import { ReactComponent as Logo } from '../assets/svg/logo.svg';
 
 const Contact: React.FC<{}> = () => {
   return (
-    <Box style={stylesImg.container} className={styles.container}>
-      <Box className={styles.overlay} boxShadow={2}>
+    <Box className={styles.container}>
+      <Box className={styles.overlay} boxShadow={5}>
+        <Logo className={styles.logo} />
         <Typography
           variant="h4"
-          color="secondary"
+          color="black"
           fontWeight={300}
           className={styles.header}
         >
@@ -29,7 +22,7 @@ const Contact: React.FC<{}> = () => {
         <Typography
           variant="h6"
           fontStyle="italic"
-          color="secondary"
+          color="black"
           fontWeight={300}
           className={styles.subheader}
         >
@@ -44,23 +37,11 @@ const Contact: React.FC<{}> = () => {
               className={styles.icon}
             />
             <Box>
-              <Link
-                href="tel:+48-123-456-789"
-                underline="none"
-                color="secondary"
-              >
-                <Typography
-                  variant="subtitle1"
-                  color="secondary"
-                  fontWeight={300}
-                >
+              <Link href="tel:+48-123-456-789" underline="none" color="black">
+                <Typography variant="subtitle1" color="black" fontWeight={300}>
                   Zadzwoń do nas!
                 </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="secondary"
-                  fontWeight={400}
-                >
+                <Typography variant="subtitle1" color="black" fontWeight={400}>
                   +48 123 456 789
                 </Typography>
               </Link>
@@ -76,20 +57,12 @@ const Contact: React.FC<{}> = () => {
               <Link
                 href="mailto:virobuster@virobuster.pl"
                 underline="none"
-                color="secondary"
+                color="black"
               >
-                <Typography
-                  variant="subtitle1"
-                  color="secondary"
-                  fontWeight={300}
-                >
+                <Typography variant="subtitle1" color="black" fontWeight={300}>
                   Wyślij do nas maila
                 </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="secondary"
-                  fontWeight={400}
-                >
+                <Typography variant="subtitle1" color="black" fontWeight={400}>
                   virobuster@virobuster.pl
                 </Typography>
               </Link>
@@ -102,25 +75,12 @@ const Contact: React.FC<{}> = () => {
               className={styles.icon}
             />
             <Box>
-              <Typography
-                variant="subtitle1"
-                color="secondary"
-                fontWeight={300}
-              >
-                Köhlershohner Str. 60, D-53578 Windhagen
+              <Typography variant="subtitle1" color="black" fontWeight={300}>
+                Strasse Ein Zwei 3, DE
               </Typography>
-              <Typography
-                variant="subtitle1"
-                color="secondary"
-                fontWeight={400}
-              >
-                <Link
-                  href="https://www.virobuster.com/en"
-                  target="_blank"
-                  underline="none"
-                  color="secondary"
-                >
-                  https://www.virobuster.com/en
+              <Typography variant="subtitle1" color="black" fontWeight={400}>
+                <Link href="" target="_blank" underline="none" color="black">
+                  https://yourlink.com
                 </Link>
               </Typography>
             </Box>
@@ -130,13 +90,13 @@ const Contact: React.FC<{}> = () => {
       <Box className={styles.footer}>
         <Typography
           className={styles.text}
-          color="black"
+          color="primary"
           fontWeight={300}
           sx={{ mr: 'auto' }}
         >
           Virobuster®
         </Typography>
-        <Typography className={styles.text} color="black" fontWeight={300}>
+        <Typography className={styles.text} color="primary" fontWeight={300}>
           Copyright 2022 MWES
         </Typography>
       </Box>
